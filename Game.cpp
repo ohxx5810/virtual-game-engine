@@ -8,9 +8,6 @@
  *
  * TO DEMONSTRATE:
  *
- * 1. Press 'm' 5 times
- * 2. Then press 'e' to turn on LIGHT0.
- * 3. Press 'n' to rotate back to the now lit sphere.
  *
  * MOVES
  * 		Traverse - w, s, a, d
@@ -24,10 +21,11 @@
  * 		Keep blue cone in the air for viewing - Shift + e
  *
  *
- * 	3. Find first light switch (hint: it is to the left of the red ball)
- * 	4. Interact with Objects
- * 	5. Try placing the blue cone on the table or the floor!
- * 	6. Walking brings your head back to level from Tilt and Look Up/Down functions.
+ * 	1. Find first light switch (hint: it is to the left of the red ball)
+ *	2. The last light switch is to the left behind the green ball.
+ * 	3. Interact with Objects
+ * 	4. Try placing the blue cone on the table or the floor!
+ * 	5. Walking brings your head back to level from Tilt and Look Up/Down functions.
  *
  * DEBUGGING
  * 		Enable/Disable GL_LIGHTING - Toggle '1'
@@ -106,8 +104,8 @@ void init(void)
 
 	/* Interactive objects */
 	initializeObjects();
-
 	glMatrixMode(GL_MODELVIEW);
+	glEnable(GL_LIGHT0);
 }
 
 /* --------------------  PICKING UP OBJECTS -------------------- */
